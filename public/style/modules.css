@@ -1,0 +1,108 @@
+@media (min-width: 400px) and (max-width: 767px) {
+   
+    header h1 {
+        padding: 10px;
+        color: #fff;
+    }
+    h2{
+       background-color:#4a4a4a;
+       color:white;
+       margin-top: 0px;
+    text-align: center;
+    width: 480px;
+    padding-top: 19px;
+    height: 48px;
+    }
+    .input{
+        width:472px;
+        background-color: #d8d8d8;
+        box-shadow: 7px -1px 15px grey;
+        text-align: center;
+    margin: auto;
+    border:3px  solid grey;
+    width: 431px;
+    margin-bottom:26px;
+    
+    }
+    img{
+        margin-top: 20px;
+        border: 7px solid white;
+        box-shadow: 7px -1px 15px grey;
+
+    }
+    h3{
+        color: whitesmoke;
+    }
+    p{
+        width: 425px;
+        height: 192px;
+        margin: auto;
+        color: #4a4a4a;
+}
+    h4{
+        color: #4a4a4a;
+
+    }
+    form{
+    display: flexbox;
+    flex-direction: column;
+    margin: 10% 15%;
+}
+#book {
+    display: inline-block;
+    width: 85%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #495057;
+    margin-bottom: 20px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+} 
+.input-feild
+{
+    display: inline-block;
+    width: 85%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 2;
+    color: #495057;
+    margin-bottom: 20px;
+    background-color: gray;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;  
+}
+input[type=radio]
+{
+    margin-right: 25px;
+}
+h1{
+    display: inline-block;
+
+    text-align: left;
+}
+#icon
+{
+    color: #fff;
+    width: 45%;
+    padding-top: 8%;
+    text-align: right;
+    font-size: 26px;
+}
+
+button
+{
+    border: none;
+    padding: 18px;
+    margin-top: 25px;
+    width: 93%;
+    background-color: #000;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+}
