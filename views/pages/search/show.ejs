@@ -26,9 +26,23 @@
         <h3> <%=value.title%> </h3>
         <h4>  <%=value.authors%></h4>
         <p> <%= value.description%></p>
+        <h3> <%=value.isbn%> </h3>
         
         
-        </div>
+        
+        <form action="/books" method="post">
+            <input type="text" name = "authors" value="<%=value.authors%>">
+            <input type="text" name= "title" value="<%=value.title%>">
+            <input type="text"  name= "isbn" value="<%=value.isbn%>">
+            <input type="text"  name = "imageLinks" value="<%=value.imageLinks%>">
+            
+            <input type="text" name= "description" value="<%=value.description%>">
+            <input type= text name="bookshlef">
+            <button type="submit"  > SELECT THIS BOOK</button>
+    
+    
+        </form>
+    </div>
     
     <%}); %>
     

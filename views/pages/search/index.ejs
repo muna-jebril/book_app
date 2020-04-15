@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style//base.css">
-    <link rel="stylesheet" href="style//icons.css">
-    <link rel="stylesheet" href="style//modules.css">
-    <!-- <link rel="stylesheet" href="style//layout.css"> -->
-    <link rel="stylesheet" href="style//reset.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/modules.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/reset.css">
 </head>
 <body>
     <h1>HELLO Wrold</h1>
     
-             <% book.forEach(value => { %>
-                <div class= "input">  <img src='<%=value.imageLinks%>'> 
+             <% books.forEach(value => { %>
+                <div class= "input">  <img src='<%=value.img_url%>'> 
                 <h3> <%=value.title%> </h3>
-                <h4>  <%=value.authors%></h4>
+                <h4>  <%=value.author%></h4>
+
+<a href="/bookResult/<%=value.id%>">SHOW DETAlis</a>
                 
-                
+
                 </div>
             
             <%}); %> 

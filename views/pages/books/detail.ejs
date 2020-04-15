@@ -1,0 +1,30 @@
+<section>
+
+
+    <% result.forEach(value => { %>
+    <div class="input"> <img src='<%=value.img_url%>'>
+        <h3> <%=value.title%> </h3>
+        <h4> <%=value.author%></h4>
+        <h3> <%=value.descrption%> </h3>
+        <h4> <%=value.isbn%></h4>
+        <h4> <%=value.bookshlef%></h4>
+
+        <%}); %>
+        <button id="update">update details </button>
+        <form action="/add/<%=result[0].id%>?_method=put" method="post" id="update_form">
+            <legend>Add a task</legend>
+            <input type="text" name="title" placeholder="Task title">
+            <input type="text" name="authors" placeholder="author">
+            <input type="text" name="imageLinks" placeholder="img url">
+            <input type="text" name="isbn" placeholder="isbn">
+            <input type="text" name="bookshlef" placeholder="bookslef">
+
+            <textarea name="description" placeholder=" Description" cols="30" rows="10"></textarea>
+            <button type='submit'> Add Task</button>
+        </form>
+
+        <button action="">remove details </button>
+</section>
+
+
+<script src='../../../js/app.js'></script>
