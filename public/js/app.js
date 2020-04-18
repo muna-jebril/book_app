@@ -3,5 +3,9 @@ $(document).ready(function(){
   $('#update').on('click', function(){
       $('#update_form').toggle();
   })
-  console.log("dddddd");
+  $('#UL').hide();
+  $('.nav').on('click', function(){
+      $('#UL').toggle();
+  })
 })
+console.log("dddddd");

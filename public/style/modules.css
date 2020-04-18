@@ -1,16 +1,47 @@
 @media (min-width: 400px) and (max-width: 767px) {
    
-    header h1 {
+    h1 {
         padding: 10px;
         color: #fff;
+        font-size: 20px;
     }
+    div{
+        
+        width: 402px;
+        height: 568px;
+        border: 1px solid black;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-top: 14px;
+}
+.nav  {
+    background-color: white;
+font-size: 24px;
+margin-left: 290px;
+margin-top: 3px;
+margin-bottom: 68px;
+margin-top: 27px
+}
+
+
+ul {
+list-style: none;
+color: white;
+margin-top: -30px;
+margin-left: 115px;
+
+}
+li{
+text-align: center;
+text-decoration: none;
+}
     h2{
        background-color:#4a4a4a;
        color:white;
        margin-top: 0px;
     text-align: center;
-    width: 480px;
-    padding-top: 19px;
+    width:  491px;;
+    padding-top: 56px;
     height: 48px;
     }
     .input{
@@ -22,16 +53,25 @@
     border:3px  solid grey;
     width: 431px;
     margin-bottom:26px;
+    height: 855px;
     
+    }
+    h3{
+        margin-top: 114px;
     }
     img{
         margin-top: 20px;
         border: 7px solid white;
         box-shadow: 7px -1px 15px grey;
+        margin-bottom: -111px;
+
 
     }
     h3{
         color: whitesmoke;
+    }
+    h5{
+        margin-top: -84px;
     }
     p{
         width: 425px;
@@ -44,6 +84,8 @@
 
     }
     form{
+        margin-top: -23px;
+
     display: flexbox;
     flex-direction: column;
     margin: 10% 15%;
@@ -67,7 +109,7 @@
     width: 85%;
     padding: .375rem .75rem;
     font-size: 1rem;
-    line-height: 2;
+    height:40px;
     color: #495057;
     margin-bottom: 20px;
     background-color: gray;

@@ -6,27 +6,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/base.css">
     <link rel="stylesheet" href="/public/style/icons.css">
-    <link rel="stylesheet" href="/public/style/modules.css">
-    <link rel="stylesheet" href="/public/style/layout.css">
+    <link rel="stylesheet" href="/style/modules.css">
+    <link rel="stylesheet" href="/style/layout.css">
     <link rel="stylesheet" href="/public//style/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 </head>
 <body>
-    <header>
-        <h1>BEST BOOK </h1>
-        <i id="icon" class="fa fa-bars"></i>
+    <%- include ('../../layout/header.ejs') %>
 
-
-    </header>
     <h2> Search for title or author </h2>
     <% book.forEach(value => { %>
         <div class= "input">  <img src='<%=value.imageLinks%>'> 
         <h3> <%=value.title%> </h3>
         <h4>  <%=value.authors%></h4>
         <p> <%= value.description%></p>
-        <h3> <%=value.isbn%> </h3>
+        <h5 id = "isbn"> <%=value.isbn%> </h5>
         
         
         

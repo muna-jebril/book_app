@@ -10,4 +10,3 @@ CREATE TABLE studnet (
      bookshelf VARCHAR(255)
 );
 
-INSERT INTO studnet (author,title,isbn,img_url,description,bookshelf) VALUES ('hello','muna','Razan','jebril','zzz','dd');

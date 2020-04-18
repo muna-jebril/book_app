@@ -8,7 +8,7 @@ const superagent = require('superagent');
 
 const methodOverride = require('method-override');
 app.use(methodOverride('_method'));
-
+  
 app.use(express.static('./public'));
 app.use(express.json());
 
@@ -35,6 +35,16 @@ client.query(SQL,values)
 })
 
 }
+app.delete('/delete/:value_id',(req,res)=>{
+ let safeValues= [req.params.value_id];
+  let SQL = 'DELETE FROM studnet WHERE id=$1;'
+client.query(SQL,safeValues)
+.then(()=>{
+  res.redirect(`/`);
+})
+
+
+});
 
 function bookdetails(req,res){
   let SQL = `SELECT * FROM studnet WHERE id=$1;`
