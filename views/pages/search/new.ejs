@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="/style/icons.css">
     <link rel="stylesheet" href="/style/modules.css">
     <link rel="stylesheet" href="/style/layout.css">
-    <link rel="stylesheet" href="//style/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 
 
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>BEST BOOK </h1>
-        <i id="icon" class="fa fa-bars"></i>
+    <%- include ('../../layout/header.ejs') %>
 
-
-    </header>
     <main>
 <form action="/search/show" method="POST">
 <!-- <label>enter a tittle or auther</label><br> -->
@@ -37,10 +31,12 @@
 </div>
 <button> SERACh the google book api </button>
 </form>
-
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../../../js/app.js"></script>
     </main>
     <footer>
 all right resved @copy 2020 
     </footer>
+ 
 </body>
 </html>

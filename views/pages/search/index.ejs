@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style//base.css">
-    <link rel="stylesheet" href="style//icons.css">
-    <link rel="stylesheet" href="style//modules.css">
-    <link rel="stylesheet" href="style//layout.css">
-    <link rel="stylesheet" href="style//reset.css">
-</head>
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/modules.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <body>
-    <h1>HELLO Wrold</h1>
+    <%- include ('../../layout/header.ejs') %>
+
+             <% books.forEach(value => { %>
+                <div class= "input">  <img src='<%=value.img_url%>'> 
+                <h3> <%=value.title%> </h3>
+                <h4>  <%=value.author%></h4>
+
+<a href="/bookResult/<%=value.id%>">SHOW DETAlis</a>
+                
+
+                </div>
+            
+            <%}); %> 
+            <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+            <script src="../../../js/app.js"></script>
 </body>
 </html>

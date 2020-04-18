@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/muna-jebril/book_app#readme",
   "dependencies": {
+    "api": "0.0.1",
     "dotenv": "^8.2.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "pg": "^8.0.2",
     "superagent": "^5.2.2"
   }
 }
