@@ -33,7 +33,7 @@ client.query(SQL,values)
   console.log(req.body,"fffassdf");
   res.redirect(`/bookResult/${req.params.value_id}`)
 })
-
+gbkhlbjvlbjjllng
 }
 app.delete('/delete/:value_id',(req,res)=>{
  let safeValues= [req.params.value_id];
